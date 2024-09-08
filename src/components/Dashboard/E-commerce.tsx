@@ -281,7 +281,7 @@ const ECommerce: React.FC = () => {
         )}
 
         {total_report?.total_jobs > -1 && (
-          <CardDataStats title="Pending Jobs" total={total_report?.total_jobs}>
+          <CardDataStats title="Pending Complaints" total={total_report?.total_jobs}>
             <svg
               version="1.1"
               id="Layer_1"

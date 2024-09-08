@@ -1,52 +1,3 @@
-// import React from 'react';
-// import { BarChart } from '@mui/x-charts/BarChart';
-
-// const Bars = () => {
-//   return (
-//     <BarChart
-//       xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
-//       series={[
-//         { data: [4, 3, 5] },
-//         { data: [1, 6, 3] },
-//         { data: [2, 5, 6] }
-//       ]}
-//       width={500}
-//       height={300}
-//     />
-//   );
-// };
-
-// export default Bars;
-
-
-// import React from 'react';
-// import { BarChart } from '@mui/x-charts/BarChart';
-
-// const Bars = () => {
-//   // Data from your API
-//   const data = {
-//     total_jobs: 6,
-//     pending_jobs: 0,
-//     completed_jobs: 5,
-//     canceled_jobs: 1
-//   };
-
-//   return (
-//     <BarChart
-//       xAxis={[{ scaleType: 'band', data: ['Total Jobs', 'Pending Jobs', 'Completed Jobs', 'Canceled Jobs'] }]}
-//       series={[
-//         {
-//           data: [data.total_jobs, data.pending_jobs, data.completed_jobs, data.canceled_jobs],
-//           label: 'Jobs'
-//         }
-//       ]}
-//       width={500}
-//       height={300}
-//     />
-//   );
-// };
-
-// export default Bars;
 
 
 
@@ -109,7 +60,7 @@ const Bars = ({Data} ) => {
 
   return (
     <BarChart
-      xAxis={[{ scaleType: 'band', data: ['Total Jobs', 'Pending Jobs', 'Completed Jobs', 'Canceled Jobs'] }]}
+      xAxis={[{ scaleType: 'band', data: ['Total Complaints', 'Pending ', 'Completed ', 'Canceled '] }]}
       series={[
         { data: chartData }
       ]}

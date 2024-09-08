@@ -35,8 +35,13 @@ const UpdateTenantModal: React.FC<ModalProps> = ({ isOpen, onClose, user }) => {
   useEffect(() => {
     if (user) {
       const formatDate = (date: string) => {
-        const d = new Date(date);
-        return d.toISOString().slice(0, 16); // 'YYYY-MM-DDTHH:MM'
+        if(date){
+          const d = new Date(date);
+          console.log("d",d)
+          return d.toISOString().slice(0, 16); // 'YYYY-MM-DDTHH:MM'
+        }
+        return ""
+        
       };
 
       setuserId(user?.id || "");

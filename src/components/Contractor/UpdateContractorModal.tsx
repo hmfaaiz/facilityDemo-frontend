@@ -37,6 +37,7 @@ const UpdateContractorModal: React.FC<ModalProps> = ({ isOpen, onClose, user }) 
       const formatDate = (date: string | undefined) => {
         if (!date) return "";
         const d = new Date(date);
+        console.log("d",d)
         return d.toISOString().slice(0, 16); // 'YYYY-MM-DDTHH:MM'
       };
 

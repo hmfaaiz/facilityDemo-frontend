@@ -261,10 +261,10 @@ if (!chartData) {
         const data =  Data;
         if (data) {
           setChartData([
-            { id: 0, value: data.total_jobs || 0, label: 'Total Jobs' },
-            { id: 1, value: data.pending_jobs || 0, label: 'Pending Jobs' },
-            { id: 2, value: data.completed_jobs || 0, label: 'Completed Jobs' },
-            { id: 3, value: data.canceled_jobs || 0, label: 'Canceled Jobs' },
+            { id: 0, value: data.total_jobs || 0, label: 'Total Complaints' },
+            { id: 1, value: data.pending_jobs || 0, label: 'Pending Complaints' },
+            { id: 2, value: data.completed_jobs || 0, label: 'Completed Complaints' },
+            { id: 3, value: data.canceled_jobs || 0, label: 'Canceled Complaints' },
           ]);
         }
       } catch (error) {
@@ -294,7 +294,7 @@ if (!chartData) {
           outerRadius: 170, // Adjust to change the size
         },
       ]}
-      width={600}
+      width={700}
       height={400}
     />
   );

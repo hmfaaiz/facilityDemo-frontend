@@ -244,7 +244,7 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Job",
+        label: "Complaints",
         route: "/job",
         permission: "Job",
       },
@@ -265,7 +265,7 @@ const menuGroups = [
             <path d="M21 12.5a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM12 7v5h5"></path>
           </svg>
         ),
-        label: "Job Management",
+        label: "Complaint Management",
         route: "/jobmanagement",
         permission: "Job Management",
       },

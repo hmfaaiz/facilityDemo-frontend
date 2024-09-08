@@ -10,6 +10,7 @@ import TenatRegisterModal from '../../components/TenantModal/TenatRegisterModal'
 import { useState } from "react";
 import TableReserved from "@/components/Tables/TableReserved";
 import TableProperty from "@/components/Tables/TableProperty";
+import RegisterPropertyModal from "@/components/property/RegisterPropertyModal";
 
 
 const FormLayout = () => {
@@ -28,7 +29,7 @@ const FormLayout = () => {
       >
         Add Property
       </button>
-      <TenatRegisterModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      <RegisterPropertyModal isOpen={isModalOpen} onClose={handleCloseModal} />
       <TableProperty />
     </DefaultLayout >
   );
