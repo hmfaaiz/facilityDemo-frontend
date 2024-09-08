@@ -1,0 +1,16 @@
+const errorMessage = error.response?.data?.message || "Something went wrong";
+
+toast.error(errorMessage, {
+  autoClose: 1000,
+});
+
+
+
+   dispatch({
+            type: "refresh",
+            payload: !reduxData.refresh,
+          });
+          toast.success("Successfully updated", {
+            autoClose: 1000, // Duration in milliseconds
+          });
+          onClose();
