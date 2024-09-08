@@ -126,13 +126,13 @@ const Profile = () => {
               <div className="mx-auto mb-5.5 mt-4.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]">
                 <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
                   <span className="font-semibold text-black dark:text-white">
-                    Saudi
+                    Sidtech
                   </span>
-                  <span className="text-sm">Pak</span>
+                  <span className="text-sm">01</span>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
                   <span className="font-semibold text-black dark:text-white">
-                  Facility
+                    Facility
                   </span>
                   <span className="text-sm">Management</span>
                 </div>
@@ -149,11 +149,15 @@ const Profile = () => {
                   About Us
                 </h4>
                 <p className="mt-4.5">
-                  Saudi Pak aims at strengthening economic cooperation between
-                  the brotherly people of Saudi Arabia and Pakistan. To achieve
-                  this objective, we are committed to add value for our
-                  stakeholders through capital formation and investment related
-                  activities in Pakistan and abroad.
+                  At Sidtech01, we are committed to enhancing facility
+                  management practices that strengthen economic cooperation. Our
+                  goal is to deliver high-quality, comprehensive facility
+                  management solutions that add value for our stakeholders. By
+                  optimizing operations and ensuring efficient use of resources,
+                  we facilitate smoother capital formation. Sidtech01 aims to
+                  provide innovative and reliable facility management systems
+                  that contribute to the growth and sustainability of businesses
+                  across organizations.
                 </p>
               </div>
 

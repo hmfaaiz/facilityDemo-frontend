@@ -8,8 +8,8 @@ import DefaultLayout from "@/components/Layouts/DefaultLayout";
 
 // export const metadata: Metadata = {
 //   title:
-//     "Saudi Pak Room",
-//   description: "This is Saudi Pak Room Dashboard Template",
+//     "Facility Management System",
+//   description: "This is Facility Management System Dashboard Template",
 // };
 
 export default function Home() {

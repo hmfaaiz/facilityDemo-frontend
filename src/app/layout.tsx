@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
          <head>
-        <title>Saudi Pak Facility Management System</title>
+        <title>Sidtech01 Facility Management System</title>
         <link rel="icon" href="/images/logo/saudi-logo.png" type="image/png" /> 
 
       </head>

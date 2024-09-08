@@ -97,7 +97,7 @@ const SignIn: React.FC = () => {
               </Link>
 
               <p className="2xl:px-20">
-              Saudi Pak Industrial And Agricultural Investment Company Limited
+              Sidtech01 Company Limited
               </p>
 
               <span className="mt-15 inline-block">

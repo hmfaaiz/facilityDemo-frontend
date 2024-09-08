@@ -8,8 +8,8 @@ import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import ToastProvider from "@/components/ToastProvider/page";
 export const metadata: Metadata = {
   title:
-    "Saudi Pak Conference Room",
-  description: "This is Saudi Pak Room Dashboard Template",
+    "Sidtech01 Facility Managment System",
+  description: "This is Sidtech01 Dashboard ",
 };
 
 export default function page() {

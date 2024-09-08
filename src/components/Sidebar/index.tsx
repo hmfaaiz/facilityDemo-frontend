@@ -444,7 +444,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               priority
             />
           </Link>
-          <h1 className="text-center font-bold text-white">Saudi Pak FMS</h1>
+          <h1 className="text-center font-bold text-white">Sidtech01 Facility Management System</h1>
 
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
