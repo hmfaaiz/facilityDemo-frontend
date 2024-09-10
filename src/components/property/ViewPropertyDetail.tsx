@@ -35,7 +35,7 @@ const ViewPropertyDetail: React.FC<ModalProps> = ({
         </h3>
         <div className="space-y-6">
           {/* Room Information */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 shadow-sm  h-[200px] ">
       
             <p className="text-gray-700 dark:text-gray-300">
              {property?.detail}

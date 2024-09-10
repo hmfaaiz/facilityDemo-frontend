@@ -150,9 +150,7 @@ const TableProperty = () => {
               <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white xl:pl-11">
                 Capacity
               </th>
-              <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white  xl:pl-11">
-                Price
-              </th>
+
          
      
               <th className="px-4 py-4 font-medium text-black dark:text-white">
@@ -184,11 +182,11 @@ const TableProperty = () => {
                   </h5>
                 </td>
 
-                <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
+                {/* <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                   <h5 className="font-medium text-black dark:text-white">
                     {property.price}
                   </h5>
-                </td>
+                </td> */}
 
                 {/* <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                   <h5 className="font-medium text-black dark:text-white">{user.profile?.cnic}</h5>

@@ -11,7 +11,7 @@ import TableAdmins from "@/components/Tables/TableAdmins";
 
 const FormLayout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activePage, setActivePage] = useState("");
+  const [activePage, setActivePage] = useState("tenant");
 
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);

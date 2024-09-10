@@ -29,7 +29,7 @@ const TableTenant = () => {
   const [endDate, setEndDate] = useState("");
   const [tenantData, setTenantData] = useState([]);
   const [refresh, setRefresh] = useState(true);
-  const [isCompanyOpen, setIsCompanyOpen] = useState(false);
+  const [isCompanyOpen, setIsCompanyOpen] = useState(true);
   const [isIndOpen, setIsIndOpen] = useState(false);
   const closeModal = () => setIsModalOpen(false);
   const closeViewModal = () => setIsViewModalOpen(false);
@@ -39,7 +39,7 @@ const TableTenant = () => {
     setIsIndOpen(false);
   };
   const openIndepententTable = () => {
-    setIsIndOpen(true );
+    setIsIndOpen(true);
     setIsCompanyOpen(false);
   };
 
