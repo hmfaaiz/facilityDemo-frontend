@@ -286,7 +286,7 @@ const TableUpcomingtPropertyManag: React.FC<ModalProps> = ({
                 </td>
                 <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                   <h5 className="font-medium text-black dark:text-white">
-                    {booking?.assignTo.profile.mobile}
+                    {booking?.assignTo.name}
                   </h5>
                 </td>
                 {propertyType === "archive" && (

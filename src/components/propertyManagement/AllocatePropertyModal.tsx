@@ -244,11 +244,11 @@ const AllocatePropertyModal = ({ isOpen, onClose, property }) => {
 
               <div className="w-full xl:w-2/5">
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Email
+                 Type
                 </label>
                 <input
                   disabled
-                  value={tenantData?.email || ""}
+                  value={tenantData?.type || ""}
                   type="text"
                   placeholder="Tenant email"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
@@ -257,29 +257,18 @@ const AllocatePropertyModal = ({ isOpen, onClose, property }) => {
 
               <div className="w-full xl:w-2/5">
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Contact Number
+                 CNIC / NTN
                 </label>
                 <input
                   disabled
-                  value={tenantData?.profile?.mobile || ""}
+                  value={tenantData?.cnic ||tenantData?.ntn}
                   type="text"
                   placeholder="Tenant contact number"
                   className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                 />
               </div>
 
-              <div className="w-full xl:w-2/5">
-                <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  CNIC
-                </label>
-                <input
-                  disabled
-                  value={tenantData?.profile?.cnic || ""}
-                  type="number"
-                  placeholder="Tenant CNIC"
-                  className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
-                />
-              </div>
+            
 
               <div className="mt-6 w-full xl:w-2/5">
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
