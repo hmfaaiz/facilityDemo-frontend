@@ -142,11 +142,11 @@ const ViewPropertyManegDetail: React.FC<ModalProps> = ({
               <strong>Name:</strong> {booking?.assignTo?.name}
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              <strong>Mobile:</strong> {booking?.assignTo?.profile?.mobile}
+              <strong>Type:</strong> {booking?.assignTo?.type}
             </p>
 
             <p className="text-gray-700 dark:text-gray-300">
-              <strong>CNIC:</strong> {booking?.assignTo?.profile?.cnic}
+              <strong>CNIC/NTN:</strong> {booking?.assignTo?.cnic || booking?.assignTo?.ntn}
             </p>
          
           </div>

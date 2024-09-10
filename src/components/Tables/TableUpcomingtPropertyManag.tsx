@@ -230,7 +230,7 @@ const TableUpcomingtPropertyManag: React.FC<ModalProps> = ({
                 Tenant No.
               </th>
               <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white  xl:pl-11">
-                Contact No
+                Name
               </th>
               {propertyType === "archive" && (
                 <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white xl:pl-11">
