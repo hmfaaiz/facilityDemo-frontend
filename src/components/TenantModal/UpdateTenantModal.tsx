@@ -800,7 +800,7 @@ const UpdateTenantModal: React.FC<ModalProps> = ({ isOpen, onClose, user }) => {
                   onClick={UpdateOrgContact}
                   className="hover:bg-primary-dark mr-4 rounded bg-primary px-4 py-2 text-white"
                 >
-                  Submit Contact
+                  Save Contacts
                 </button>
               </div>
               <button

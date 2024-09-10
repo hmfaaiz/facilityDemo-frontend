@@ -236,7 +236,7 @@ const ViewTenantDetail: React.FC<ModalProps> = ({
               Tenant Contact Information
             </h4>
             {tenant?.TenantOrgContacts?.map((contact) => (
-              <div key={contact.id} className="mb-4 flex w-full flex-col gap-1 shadow-[0_1px_4px_rgba(0,0,0,0.1)]">
+              <div key={contact.id} className="pb-3 mb-4 flex w-full flex-col gap-1 shadow-[0_1px_1px_rgba(0,0,0,0.1)]">
                 <p className="text-gray-700 dark:text-gray-300">
                   <strong>Name:</strong> {contact.name}
                 </p>
