@@ -473,7 +473,7 @@ const TableTenant = () => {
       <ViewTenantDetail
         isOpen={isViewModalOpen}
         onClose={closeViewModal}
-        user={selectedUser}
+        tenant={selectedUser}
       />
     </div>
   );
