@@ -150,6 +150,26 @@ const ViewPropertyManegDetail: React.FC<ModalProps> = ({
             </p>
          
           </div>
+
+
+
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 shadow-md">
+            <h4 className="text-gray-800 dark:text-gray-200 mb-3 text-xl font-medium">
+              Admin Information
+            </h4>
+
+            {booking?.assignTo?.users?.map((admin, index) => (
+              <div key={admin.id} className="mb-2 flex w-full flex-col gap-1">
+                <p className="text-gray-700 dark:text-gray-300">
+                  <strong>Name:</strong> {admin?.name}
+                </p>
+                <p className="text-gray-700 dark:text-gray-300">
+                  <strong>Email:</strong> {admin?.email}
+                </p>
+               
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
