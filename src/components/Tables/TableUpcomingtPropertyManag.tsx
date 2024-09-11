@@ -17,6 +17,7 @@ import SelectionJobModal from "../jobmanagement/SelectionJobModal";
 import ViewPropertyDetail from "../propertyManagement/ViewPropertyManagDetail";
 import ViewPropertyManegDetail from "../propertyManagement/ViewPropertyManagDetail";
 import AllocateBookingModal from "../propertyManagement/UpdateBooking";
+import UpdateBookingModal from "../propertyManagement/UpdateBooking";
 
 interface ModalProps {
   propertyType: any;
@@ -436,7 +437,7 @@ const TableUpcomingtPropertyManag: React.FC<ModalProps> = ({
         onClose={closeModal}
         jobData={selectedJobData}
       /> */}
-      <AllocateBookingModal
+      <UpdateBookingModal
         isOpen={isModalOpen}
         onClose={closeModal}
         property={selectedJobData}

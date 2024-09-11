@@ -4,7 +4,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
-const AllocateBookingModal = ({ isOpen, onClose, property }) => {
+const UpdateBookingModal = ({ isOpen, onClose, property }) => {
   const [detail, setDetail] = useState("");
   const [tenantData, setTenantData] = useState(null); // Update to 'null' initially
   const [searchCNIC, setSearchCNIC] = useState("");
@@ -51,14 +51,14 @@ const AllocateBookingModal = ({ isOpen, onClose, property }) => {
       "tenantData",
       tenantData,
     );
-    if (property.id && start_time && tenantData) {
+    if (property.id && start_time) {
       try {
         const response = await axios.put(
           `${base_url}propertymanagement/UpdateBooking`,
           {
-            property_id: property.id,
+            bookingId: property.id,
             start_time,
-            tenantId: tenantData.id,
+            property_id:property.property_id,
             end_time,
           },
           {
@@ -189,4 +189,4 @@ const AllocateBookingModal = ({ isOpen, onClose, property }) => {
   );
 };
 
-export default AllocateBookingModal;
+export default UpdateBookingModal;
