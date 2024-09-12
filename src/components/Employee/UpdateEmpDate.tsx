@@ -24,6 +24,7 @@ interface ModalProps {
   user: UserDetail; // `booking` holds the entire booking data, including `room`
 }
 
+
 const UpdateEmpDate: React.FC<ModalProps> = ({
     isOpen,
     onClose,
