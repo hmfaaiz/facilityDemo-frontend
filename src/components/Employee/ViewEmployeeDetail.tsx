@@ -282,12 +282,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.tuesdayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.tuesdayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -305,12 +305,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.wednesdayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.wednesdayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -328,12 +328,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.thursdayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.thursdayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -351,12 +351,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.fridayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.fridayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -374,12 +374,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.saturdayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.saturdayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -397,12 +397,12 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayStart)}
+                      {formatTimeWithAmPm(dayData.sundayStart)}
                     </h5>
                   </td>
                   <td className="border-b border-[#eee] px-4 py-5 pl-9 dark:border-strokedark xl:pl-11">
                     <h5 className="font-medium text-black dark:text-white">
-                      {formatTimeWithAmPm(dayData.mondayEnd)}
+                      {formatTimeWithAmPm(dayData.sundayEnd)}
                     </h5>
                   </td>
                 </tr>
@@ -413,7 +413,7 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
               className="btn btn-primary btn 
 btn-primary m-4 mb-4 inline-flex items-center justify-center rounded-md border border-slate-950 px-10 py-4 text-center font-medium text-black hover:bg-black hover:text-white lg:px-8 xl:px-10"
             >
-              Add Employee
+            Set
             </button>
             ;
           </div>
@@ -426,7 +426,7 @@ btn-primary m-4 mb-4 inline-flex items-center justify-center rounded-md border b
    
    
    
-      {isModalOpen && <UpdateEmpDate isOpen={isModalOpen} onClose={handleCloseModal}/>}
+      {isModalOpen && <UpdateEmpDate dayData={dayData} isOpen={isModalOpen} onClose={handleCloseModal}/>}
    
     </div>
   );
