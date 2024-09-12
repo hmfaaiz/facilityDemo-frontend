@@ -688,6 +688,13 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
               </tbody>
             </table>
           </div>
+          <button
+      onClick={MarkPresent}
+   
+        className="hover:bg-primary-dark mr-4 rounded bg-blue-500 px-4 py-2 text-white"
+      >
+       Update
+      </button>
         </div>
       </div>
     </div>
