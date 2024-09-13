@@ -82,6 +82,7 @@ const SelectionJobModal: React.FC<ModalProps> = ({
   const Allocate = async () => {
     // setempId(e.target)
     // e.preventDefault();
+    console.log("empIds",empIds)
 
     if (empIds.length > 0) {
       try {
@@ -108,6 +109,7 @@ const SelectionJobModal: React.FC<ModalProps> = ({
           });
         }
       } catch (error: any) {
+  
         const errorMessage =
           error.response?.data?.message || "Something went wrong";
         toast.error(errorMessage);
