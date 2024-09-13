@@ -46,7 +46,7 @@ const PermissionsPage = () => {
       .catch((err) => {
         console.log("Something is wrong");
       });
-  }, []);
+  }, [reduxData.refresh]);
 
   // 2nd api
 
@@ -67,7 +67,7 @@ const PermissionsPage = () => {
       .catch((err) => {
         console.log("Something is wrong");
       });
-  }, [refresh]);
+  }, [reduxData.refresh]);
 
   //  3rd function
 
