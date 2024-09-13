@@ -36,10 +36,9 @@ const SelectionJobModal: React.FC<ModalProps> = ({
   console.log("checked jobData", jobEmps);
 
   useEffect(() => {
-    const fetchEmployees = async () => {
-      //   if (selectedEmpType) {
+    const fetchEmployees = async (pram:any) => {
       try {
-        const response = await axios.get(`${base_url}jobmanagement/GetEmp/`, {
+        const response = await axios.get(`${base_url}${pram}/GetEmp/`, {
           headers: {
             Authorization: localStorage.getItem("saudit") || "",
           },
@@ -52,9 +51,15 @@ const SelectionJobModal: React.FC<ModalProps> = ({
         console.error("Error fetching employees:", error);
       }
     };
-    // };
 
-    fetchEmployees();
+  
+
+    if(reduxData.role_name=="Contractor"){
+      fetchEmployees("contjobmanagement");
+    }
+    else{
+      fetchEmployees("jobmanagement");
+    }
   }, []);
 
   useEffect(() => {
@@ -433,7 +438,9 @@ return (
                 >
                   Employee
                 </button>
-                <button
+                {reduxData.role_name == "Contractor" ? (null):(
+                  <>
+                       <button
                   type="button"
                   className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90"
                   onClick={() => {
@@ -443,6 +450,9 @@ return (
                 >
                   Outsource (Contractor)
                 </button>
+                  </>
+                )}
+           
               </div>
 
               {/* Employee Section */}

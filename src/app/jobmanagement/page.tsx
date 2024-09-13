@@ -38,7 +38,7 @@ const FormLayout = () => {
 
   const [jobData, setjobData] = useState([]);
   const [jobStatus, setJobStatus] = useState("Pending");
-  const [contJobStatus, setContJobStatus] = useState("");
+  const [contJobStatus, setContJobStatus] = useState("InProcess");
 
   const reduxData = useSelector((state: any) => state.data);
   console.log("reduxData role", reduxData.role_name);
@@ -105,13 +105,7 @@ const FormLayout = () => {
           >
             My Job
           </button>
-          <button
-            onClick={() => handleContOpenModal("InProcess")} // Set status to "InProcess" on click
-            className="btn btn-primary btn 
-        btn-primary m-4 mb-4 inline-flex items-center justify-center rounded-md border border-slate-950 px-10 py-4 text-center font-medium text-black hover:bg-black hover:text-white lg:px-8 xl:px-10"
-          >
-            In Process
-          </button>
+     
           <button
             onClick={() => handleContOpenModal("Archive")} // Set status to "Archive" on click
             className="btn btn-primary m-4 inline-flex items-center justify-center rounded-md border border-slate-950 px-10 py-4 text-center font-medium text-black hover:bg-black hover:text-white lg:px-8 xl:px-10"

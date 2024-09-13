@@ -71,7 +71,7 @@ const JobRegisterModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
             <div className="w-full xl:w-3/2 ">
               <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                job
+                Job
               </label>
               <textarea
                 value={job}

@@ -286,7 +286,11 @@ const TableJobManagement: React.FC<ModalProps> = ({ jobData }) => {
                         />
                       </svg>
                     </button>
-                    {(job.job_status !== "Completed" && job.job_status !== "Canceled") && (
+
+                    {reduxData.role_name == "Contractor" ? (null):(
+                      <>
+                  
+                          {(job.job_status !== "Completed" && job.job_status !== "Canceled") && (
                       <button
                         className="hover:text-primary"
                         onClick={() => deletejob(job.id)}
@@ -318,6 +322,11 @@ const TableJobManagement: React.FC<ModalProps> = ({ jobData }) => {
                         </svg>
                       </button>
                     )}
+                        </>
+                        )
+                    
+                    }
+                
 
                     {(job.job_status !== "Completed" && job.job_status !== "Canceled") && (
                       <button
@@ -383,6 +392,9 @@ const TableJobManagement: React.FC<ModalProps> = ({ jobData }) => {
                         </svg>
                       </button>
                     ) : null}
+                 
+                 
+                 
                   </div>
                 </td>
               </tr>

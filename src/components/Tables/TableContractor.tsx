@@ -57,6 +57,7 @@ const TableContractor = () => {
     })
       .then((res) => {
         if (res.status === 200) {
+          console.log("contractor",res.data.data)
           setContractorData(res.data.data);
         }
       })

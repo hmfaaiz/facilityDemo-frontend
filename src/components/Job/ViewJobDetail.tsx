@@ -25,6 +25,7 @@ const ViewContractorDetail: React.FC<ModalProps> = ({
   onClose,
   job,
 }) => {
+  console.log("job..",job)
   if (!isOpen) return null;
 
   return (
@@ -147,7 +148,7 @@ const ViewContractorDetail: React.FC<ModalProps> = ({
                   <strong>Contact Number:</strong> {i.mobile}
                 </p>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Type:</strong> {i.emp_type.type_name}
+                  <strong>Type:</strong> {i.emp_type?.type_name}
                 </p>
               </div>
             ))}
