@@ -35,7 +35,6 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
   const [empId, setempId] = useState();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-
   const handleCloseModal = () => setIsModalOpen(false);
   const dispatch = useDispatch();
   const reduxData = useSelector((state: any) => state.data);
@@ -155,7 +154,7 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
         //   autoClose: 1000,
         // });
       });
-  }, []);
+  }, [reduxData.refresh]);
 
   return (
     <div className="fixed inset-0 top-5 z-50 flex items-center justify-center bg-black bg-opacity-60 ">
@@ -413,21 +412,20 @@ const ViewEmployeeDetail: React.FC<ModalProps> = ({
               className="btn btn-primary btn 
 btn-primary m-4 mb-4 inline-flex items-center justify-center rounded-md border border-slate-950 px-10 py-4 text-center font-medium text-black hover:bg-black hover:text-white lg:px-8 xl:px-10"
             >
-            Set
+              Set
             </button>
             ;
           </div>
         </div>
       </div>
-   
-   
-   
-   
-   
-   
-   
-      {isModalOpen && <UpdateEmpDate dayData={dayData} isOpen={isModalOpen} onClose={handleCloseModal}/>}
-   
+
+      {isModalOpen && (
+        <UpdateEmpDate
+          dayData={dayData}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 };
