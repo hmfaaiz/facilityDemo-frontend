@@ -57,7 +57,7 @@ const ViewContractorDetail: React.FC<ModalProps> = ({
               <strong>Job Status:</strong> {job?.job_status}
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              <strong>Is Seen:</strong> {job?.isSeen ? "Yes" : "No"}
+              <strong>View:</strong> {job?.isSeen ? "Yes" : "No"}
             </p>
             <p className="text-gray-700 dark:text-gray-300">
               <strong>Created At:</strong>  {new Date(job?.createdAt).toLocaleString()}

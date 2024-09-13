@@ -154,7 +154,7 @@ const TableJob = () => {
                 Job Status
               </th>
               <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white  xl:pl-11">
-                Is Seen
+                View
               </th>
               <th className="min-w-[20px] px-6 py-4 font-medium text-black dark:text-white  xl:pl-11">
                 Created At

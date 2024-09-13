@@ -113,9 +113,12 @@ const UpdateJobModal: React.FC<ModalProps> = ({
             handleSuccess();
           }
         } catch (secondError: any) {
-          const errorMessage =
-            secondError.response?.data?.message || "Something went wrong";
-          toast.error(errorMessage);
+          const errorMessage = error.response?.data?.message || "Something went wrong";
+
+          toast.error(errorMessage, {
+            autoClose: 1000,
+          });
+          
         }
       }
     } else {
@@ -147,7 +150,7 @@ const UpdateJobModal: React.FC<ModalProps> = ({
         </button>
 
         <form action="#">
-          <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mb-8 flex  flex-wrap items-center justify-center gap-4">
             <div className="xl:w-3/2 w-full ">
               <label className="mb-3 block text-sm font-medium text-black dark:text-white">
                 job
@@ -156,7 +159,7 @@ const UpdateJobModal: React.FC<ModalProps> = ({
                 value={comp_job}
                 onChange={(e) => setjob(e.target.value)}
                 placeholder="Enter your job"
-                className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                className="w-full rounded border-[1.5px] h-[50vh] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
               />
             </div>
           </div>

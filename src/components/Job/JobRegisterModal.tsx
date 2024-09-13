@@ -37,7 +37,9 @@ const JobRegisterModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             type: "refresh",
             payload: !reduxData.refresh,
           });
-          toast.success("Successfully Added");
+          toast.success("Successfully updated", {
+            autoClose: 1000,
+          });
           onClose();
         }
         // } catch (error) {
@@ -58,7 +60,7 @@ const JobRegisterModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 mt-8 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0  z-50 mt-8 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative max-h-[80vh] w-full max-w-4xl overflow-auto rounded-lg bg-white p-6 shadow-lg">
         <button
           onClick={onClose}
@@ -71,13 +73,13 @@ const JobRegisterModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
             <div className="w-full xl:w-3/2 ">
               <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                job
+                Job
               </label>
               <textarea
                 value={job}
                 onChange={(e) => setjob(e.target.value)}
                 placeholder="Enter your job"
-                className="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                className="w-full rounded border-[1.5px] h-[50vh] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
               />
             </div>
           </div>

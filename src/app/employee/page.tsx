@@ -19,7 +19,7 @@ import TableContEmployee from "@/components/Tables/TableContEmployee";
 const FormLayout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTypeModalOpen, setIsTypeModalOpen] = useState(false);
-  const [isEmpTable, setIsEmpTable] = useState(false);
+  const [isEmpTable, setIsEmpTable] = useState(true);
   const [isContEmpTable, setIsContEmpTable] = useState(false);
 
   const handleOpenModal = () => setIsModalOpen(true);
