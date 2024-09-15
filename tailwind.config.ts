@@ -19,6 +19,15 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     extend: {
+      keyframes: {
+        scaleUp: {
+          '0%': { transform: 'scale(0.9)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'scale-up': 'scaleUp 0.5s ease-in-out',
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",

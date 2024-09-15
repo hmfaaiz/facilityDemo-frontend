@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
          <head>
         <title>Sidtech01 Facility Management System</title>
-        <link rel="icon" href="/images/logo/saudi-logo.png" type="image/png" /> 
+        {/* <link rel="icon" href="/images/logo/saudi-logo.png" type="image/png" />  */}
 
       </head>
       <body suppressHydrationWarning={true}>
